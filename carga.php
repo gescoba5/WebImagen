@@ -5,27 +5,34 @@ include("conexion.php");
 $rutaServidor = 'uploads';
 
 $rutaTemporal = $_FILES['imagen']['tmp_name'];
-$nomImagen    = $_FILES['imagen']['name'];
+$tipo         = $_FILES['imagen']['type'];
+$imagen       = $_FILES['imagen']['name'];
 
-$rutaFinal    = $rutaServidor.'/'.$nomImagen;
+$prefijo      = substr(md5(uniqid(rand())), 0, 3);
+$destino      = $rutaServidor .'/' .$prefijo .'_' .$imagen;
 
-move_uploaded_file($rutaTemporal, $rutaFinal);
-
-$clasificacionImagen = $_POST['clasificacion'];
-
-$con = Conectarse();
-
-$query = "INSERT INTO carga(ruta, clasificacion) VALUES('$rutaFinal', '$clasificacionImagen')";
-
-if (mysql_query($query, $con))$q = 1;
-else $q = 0;
-
-if ($q == 1) {
-	$result = mysql_result($q, 0);
-	echo "<br>Imágen $nomImagen cargada con exito<br>";
-} else
-	echo "<br>La imágen $nomImagen no se pudo cargar<br>";
-
-mysql_close($con);
-
+if ($imagen != "") {
+	if ($tipo == "image/gif" || $tipo == "image/png" || $tipo == "image/jpeg"
+		|| $tipo == "image/jpg") {
+			move_uploaded_file($rutaTemporal, $destino);
+			$clasificacionImagen = $_POST['clasificacion'];
+			$con = Conectarse();
+			$query = "INSERT INTO carga(ruta, clasificacion) VALUES('$destino'," .
+					 "'$clasificacionImagen')";
+			if (mysql_query($query, $con)) {
+				$q = 1;
+			} else {
+				$q = 0;
+			}
+			if ($q == 1) {
+				$result = mysql_result($q, 0);
+				echo "<br>Imágen $imagen cargada con exito<br>";
+			} else
+				echo "<br>La imágen $imagen no se pudo cargar<br>";
+				mysql_close($con);
+	}
+	else {
+		echo 'Solo se permite cargar imágenes con formato GIF, PNG, JPG o JPEG';
+	}
+}
 ?>

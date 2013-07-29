@@ -249,7 +249,7 @@ label {
   line-height: 48px;
 }
 
-/* Estilo del boton atrás
+/* Estilo del boton atrás y del de carga de imágenes
 ------------------------------------------------------- */
 
 /*
@@ -300,11 +300,13 @@ label {
   -webkit-box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
 }
+
 .button:hover, .button:active {
   background: #dfdfdf;
   border-top-color: #c9c9c9;
 }
-.button:active, .button.green:active {
+
+.button:active, .button.green:active .button.blue:active {
   vertical-align: -5px;
   margin-bottom: 0;
   padding: 1px 13px 0;
@@ -313,6 +315,7 @@ label {
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
 }
+
 .button.green {
   color: #465f25;
   text-shadow: 0 1px #d9f3b5;
@@ -325,9 +328,28 @@ label {
   -webkit-box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
+
 .button.green:hover, .button.green:active {
   background: #94d362;
   border-top-color: #82bd53;
+}
+
+.button.blue {
+  color: #236277;
+  text-shadow: 0 1px #c2ecf9;
+  background: #61cdf3;
+  border-color: #6fbad1 #3fa3c0 #3583ab;
+  background-image: -webkit-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: -moz-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: -o-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: linear-gradient(to bottom, #9be5fa, #61cdf3 70%, #5fbde8);
+  -webkit-box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button.blue:hover, .button.blue:active {
+  background: #61cdf3;
+  border-top-color: #3eaac9;
 }
 
 .lt-ie9 .button {
