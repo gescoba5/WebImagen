@@ -1,0 +1,118 @@
+/* Estilo de los diferentes botones ("atrás", "cargar imágen") 
+------------------------------------------------------- */
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+.container {
+  margin: 250px auto;
+  width: 640px;
+  text-align: center;
+}
+
+.container2 {
+  margin: 100px auto;
+  width: 440px;
+  text-align: center;
+}
+
+.container .button {
+  margin: 0 10px 25px;
+}
+
+.container2 .button {
+  margin: 0 10px 25px;
+}
+
+.button {
+  margin: 0 0 5px;
+  padding: 0 12px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #555555;
+  text-decoration: none;
+  text-shadow: 0 1px white;
+  background: #dfdfdf;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #cecece #bababa #a8a8a8;
+  border-radius: 3px 3px 2px 2px;
+  outline: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background-image: -webkit-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+  background-image: -moz-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+  background-image: -o-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+  background-image: linear-gradient(to bottom, #f1f1f1, #dfdfdf 70%, #dadada);
+  -webkit-box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover, .button:active {
+  background: #dfdfdf;
+  border-top-color: #c9c9c9;
+}
+
+.button:active, .button.green:active .button.blue:active {
+  vertical-align: -5px;
+  margin-bottom: 0;
+  padding: 1px 13px 0;
+  border-width: 0;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
+}
+
+.button.green {
+  color: #465f25;
+  text-shadow: 0 1px #d9f3b5;
+  background: #94d362;
+  border-color: #91ce5e #7ab04b #5e903f;
+  background-image: -webkit-linear-gradient(top, #c0eb85, #94d362 70%, #8ed258);
+  background-image: -moz-linear-gradient(top, #c0eb85, #94d362 70%, #8ed258);
+  background-image: -o-linear-gradient(top, #c0eb85, #94d362 70%, #8ed258);
+  background-image: linear-gradient(to bottom, #c0eb85, #94d362 70%, #8ed258);
+  -webkit-box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button.green:hover, .button.green:active {
+  background: #94d362;
+  border-top-color: #82bd53;
+}
+
+.button.blue {
+  color: #236277;
+  text-shadow: 0 1px #c2ecf9;
+  background: #61cdf3;
+  border-color: #6fbad1 #3fa3c0 #3583ab;
+  background-image: -webkit-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: -moz-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: -o-linear-gradient(top, #9be5fa, #61cdf3 70%, #5fbde8);
+  background-image: linear-gradient(to bottom, #9be5fa, #61cdf3 70%, #5fbde8);
+  -webkit-box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button.blue:hover, .button.blue:active {
+  background: #61cdf3;
+  border-top-color: #3eaac9;
+}
+
+.lt-ie9 .button {
+  border-width: 1px;
+  padding: 0 12px;
+}

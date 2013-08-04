@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("conexion_login.php");
 
 // Declaracion de variables
 $nickUsuario = $_POST['inpUsuario'];
@@ -15,9 +15,9 @@ $q = mysql_query($query, $con);
 try {
 	if (mysql_result($q, 0)) {
 		$result = mysql_result($q, 0);
-		header("Location: carga.html"); 
+		header("Location: subir.php"); 
 	} else
-		echo "Usuario o Clave erroneos";
+		echo "Usuario o Clave err&oacute;neos";
 } catch (Exception $error){}
 
 mysql_close($con);

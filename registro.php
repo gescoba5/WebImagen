@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("conexion_login.php");
 
 // Declaracion de variables
 $nomUsuario = $_POST['inpNombre'];
@@ -9,8 +9,13 @@ $clave = $_POST['inpClave'];
 
 $con = Conectarse();
 
-$query = "INSERT INTO usuario (nombre, apellido, nickname, password)" .
-		 "VALUES('$nomUsuario', '$apellido', '$nickUsuario', '$clave')";
+if ($nomUsuario != "" || $apellido != "" || $nickUsuario != "" || $clave != "") {
+
+	$query = "INSERT INTO usuario (nombre, apellido, nickname, password)" .
+			 "VALUES('$nomUsuario', '$apellido', '$nickUsuario', '$clave')";
+} else {
+	echo "Debe de llenar todos los campos para registrarse <br>";
+}
 
 if (mysql_query($query, $con))$q = 1;
 else $q = 0;
