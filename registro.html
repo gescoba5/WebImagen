@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Registro de nuevos usuarios</title>
-  <link rel="stylesheet" href="css/estilos_login.css">
-  <link rel="stylesheet" href="css/estilos_botones.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Registro de nuevos usuarios</title>
+	<link rel="stylesheet" href="css/estilos_login.css">
+	<link rel="stylesheet" href="css/estilos_botones.css">
+	<link rel="stylesheet" href="css/estilos_general.css">
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<script src='js/funciones.js'></script>
 </head>
 <body>
-    <form class="login" action="registro.php" method="post">
+    <form style="top: 220px;" class="login" action="registro.php" method="post">
         <p>
-            <label for="login">Nombre:</label>
-            <input type="text" name="inpNombre" id="login" placeholder="nombre">
+            <label for="login">Nombre:*</label>
+            <input type="text" name="inpNombre" id="login" class="nombre" placeholder="nombre">
         </p>
 
         <p>
-            <label for="login">Apellido:</label>
-            <input type="text" name="inpApellido" id="login" placeholder="apellido">
+            <label for="login">Apellido:*</label>
+            <input type="text" name="inpApellido" id="login" class="apellido" placeholder="apellido">
         </p>
         
         <p>
-            <label for="login">Usuario:</label>
-            <input type="text" name="inpUsuario" id="login" placeholder="nickname">
+            <label for="login">Usuario:*</label>
+            <input type="text" name="inpUsuario" id="login" class="usuario" placeholder="nickname">
         </p>
 
         <p>
-            <label for="password">Password:</label>
-            <input type="password" name="inpClave" id="password" placeholder="password">
+            <label for="password">Password:*</label>
+            <input type="password" name="inpClave" id="password" class="password" placeholder="password">
         </p>
 
         <p class="login-submit">
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button boton">Login</button>
         </p>
     </form>
     <section class="container">

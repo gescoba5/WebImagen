@@ -9,7 +9,7 @@
 ------------------------------------------------------- */
 
 #header {
-    border-Bottom: 1px solid #000000;
+    border-Bottom: 1px solid #FFFFFF;
     height: 40px;
     left: 0px;
     position: fixed;
@@ -43,22 +43,29 @@ h2 {
     font-size: 1.2em;
 }
 
-/* Estilo de los botones
+/* Estilo de los mensajes de validacion de campos
 ------------------------------------------------------- */
 
-#ingresar {
-    height: 25px;
-    cursor: pointer;
-    margin: 0px 0px 30px 0px;
-    font-size: 0.8em;
-    text-align: center;
+*.error {
+	background-color: #BC1010;
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	margin-left: -260px;
+	margin-top: 70px;
+	position: absolute;
 }
 
-/* Estilo del cuadro de carga
-------------------------------------------------------- */
-
-.box {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    border: 1px solid #000000;
+/*
+.error:before { /*Crea una flechita
+	content: '';
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #BC1010;
+	border-left: 8px solid transparent;
+	left: -16px;
+	position: absolute;
+	top: 8.3px;
 }
+*/

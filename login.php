@@ -1,25 +1,23 @@
 <?php
-include("conexion_login.php");
+include ("conexion.php");
 
 // Declaracion de variables
 $nickUsuario = $_POST['inpUsuario'];
 $clave = $_POST['inpClave'];
 
-$con = Conectarse();
-
 $query = "SELECT * FROM usuario WHERE nickname = '".$nickUsuario."' AND
 	password = '".$clave."'";
 
-$q = mysql_query($query, $con);
+$q = mysql_query($query);
 
 try {
-	if (mysql_result($q, 0)) {
+	if (mysql_num_rows($q) !== 0) {
 		$result = mysql_result($q, 0);
 		header("Location: subir.php"); 
-	} else
-		echo "Usuario o Clave err&oacute;neos";
+	} else {
+		echo "<script type=''>alert('Usuario o clave erroneos');</script>";
+		echo '<a href="login.html"> Intente nuevamente</a>';
+	}
 } catch (Exception $error){}
-
-mysql_close($con);
 
 ?>

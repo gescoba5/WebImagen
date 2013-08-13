@@ -10,7 +10,7 @@
  */
 
 .container {
-  margin: 250px auto;
+  margin: 320px auto;
   width: 640px;
   text-align: center;
 }
@@ -21,12 +21,22 @@
   text-align: center;
 }
 
+.container3 {
+  margin: 40px auto;
+  width: 402px;
+  text-align: center;
+}
+
 .container .button {
   margin: 0 10px 25px;
 }
 
 .container2 .button {
   margin: 0 10px 25px;
+}
+
+.container3 .button {
+  margin: 0 0 0 0;
 }
 
 .button {
