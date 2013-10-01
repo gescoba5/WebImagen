@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Registro de nuevos usuarios</title>
-	<link rel="stylesheet" href="css/estilos_login.css">
-	<link rel="stylesheet" href="css/estilos_botones.css">
-	<link rel="stylesheet" href="css/estilos_general.css">
-	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
-	<script src='js/funciones.js'></script>
-</head>
-<body>
-    <form style="top: 220px;" class="login" action="registro.php" method="post">
-        <p>
-            <label for="login">Nombre:*</label>
-            <input type="text" name="inpNombre" id="login" class="nombre" placeholder="nombre">
-        </p>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Registro de nuevos usuarios</title>
+		<link rel="stylesheet" href="css/estilos_registro.css">
+		<link rel="stylesheet" href="css/estilos_botones.css">
+		<link rel="stylesheet" href="css/estilos_general.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+		<script src='js/funciones.js'></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Centro de carga de im&aacute;genes</h1>
+			<div class="usuario">
+				<a href="login.html">Iniciar sesi&oacute;n</a>&nbsp;
+				<a href="bajar_imagenes.php">Descargar im&aacute;genes</a>&nbsp;&nbsp;
+			</div>
+		</div>
+		
+		<h2 style="color: #FFFFFF">Registro de nuevos usuarios</h2>
+		
+		<form style="top: 220px;" class="login" action="registro.php" method="post">
+			<p>
+				<label for="nombre">Nombre:*</label>
+				<input type="text" name="inpNombre" class="nombre" placeholder="nombre">
+			</p>
 
-        <p>
-            <label for="login">Apellido:*</label>
-            <input type="text" name="inpApellido" id="login" class="apellido" placeholder="apellido">
-        </p>
-        
-        <p>
-            <label for="login">Usuario:*</label>
-            <input type="text" name="inpUsuario" id="login" class="usuario" placeholder="nickname">
-        </p>
+			<p>
+				<label for="apellido">Apellido:*</label>
+				<input type="text" name="inpApellido" class="apellido" placeholder="apellido">
+			</p>
+			
+			<p>
+				<label for="email">Correo electr&oacute;nico:*</label>
+				<input type="text" name="inpEmail" class="email" placeholder="alguien@ejemplo.com">
+			</p>
+			
+			<p>
+				<label for="login">Usuario:*</label>
+				<input type="text" name="inpNickname" class="nickname" placeholder="nickname">
+			</p>
 
-        <p>
-            <label for="password">Password:*</label>
-            <input type="password" name="inpClave" id="password" class="password" placeholder="password">
-        </p>
+			<p>
+				<label for="password">Password:*</label>
+				<input type="password" name="inpClave" class="password" placeholder="password">
+			</p>
 
-        <p class="login-submit">
-            <button type="submit" class="login-button boton">Login</button>
-        </p>
-    </form>
-    <section class="container">
-        <a href="index.html" class="button green">Atr&aacute;s</a>
-    </section>
-</body>
+			<p class="login-submit">
+				<button type="submit" class="login-button boton">Login</button>
+			</p>
+			
+			<P style="font-size: 0.7em; text-align: center;">
+				Campos marcados con (*) son obligatorios
+			</p>
+		</form>
+		<section class="container">
+			<a href="index.html" class="button green">Inicio</a>
+		</section>
+	</body>
 </html>

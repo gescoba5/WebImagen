@@ -10,14 +10,15 @@
  */
 
 .container {
-  margin: 320px auto;
-  width: 640px;
+  margin: 320px 0px 0px 320px;
+  width: 550px;
   text-align: center;
 }
 
 .container2 {
-  margin: 100px auto;
-  width: 440px;
+  margin-top: -60px;
+  margin-left: 320px;
+  width: 220px;
   text-align: center;
 }
 

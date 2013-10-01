@@ -1,0 +1,125 @@
+/* Estilo de las páginas subir_imágenes y bajar_imagenes
+------------------------------------------------------- */
+
+body {
+	background: #373737 url("../img/bg.png") 0 0 repeat;
+}
+
+body {
+	font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #404040;
+}
+
+.header {
+    border-Bottom: 1px solid #FFFFFF;
+    height: 30px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin-left: 10px;
+    margin-top: 10px;
+	color: #FFFFFF;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+a {
+	color: #00a1d2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.login {
+	margin: 80px auto;
+	width: 400px;
+	padding-right: 32px;
+	font-weight: 300;
+	color: #a8a7a8;
+}
+
+.login p {
+	margin: 0 0 10px;
+}
+
+input, button, label {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+label {
+	float: left;
+	width: 130px;
+	line-height: 40px;
+	padding-right: 10px;
+	font-weight: 100;
+	text-align: right;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.usuario {
+	position: absolute;
+	margin-top: 10px;
+	top: 0px;
+	right: 0px;
+    font-size: 1em;
+}
+
+/* Estilo de las imágenes
+------------------------------------------------------- */
+
+.imagenes {
+	width:330px;
+	height:330px;
+	float:left;
+	clear: right;
+	padding: 50px;
+}
+
+.blur {
+   background-color: #ccc; /*shadow color*/
+   color: inherit;
+   margin-left: 4px;
+   margin-top: 4px;
+   width: 224px;
+}
+
+.shadow, .content {
+   position: relative;
+   bottom: 2px;
+   right: 2px;
+}
+
+.shadow {
+   background-color: #666; /*shadow color*/
+   color: inherit;
+}
+
+.content {
+   background-color: #fff; /*background color of content*/
+   color: #000; /*text color of content*/
+   border: 1px solid #000; /*border color*/
+   padding: 1em 1.5ex;
+}
+
+.content img {
+   border: 1px solid #000000;
+} 

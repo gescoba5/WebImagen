@@ -1,32 +1,8 @@
-/* Estilo del cuerpo de la p·gina
+/* Estilo del cuerpo de la p√°gina
 ------------------------------------------------------- */
 
 #body{
     overflow: hidden;
-}
-
-/* Estilo de los encabezados de la p·gina
-------------------------------------------------------- */
-
-#header {
-    border-Bottom: 1px solid #FFFFFF;
-    height: 40px;
-    left: 0px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
-
-h1 {
-    font-size: 1.2em;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-h2 {
-    font-size: 1.0em;
-    margin-left: 2px;
-    margin-top: 50px;
 }
 
 /* Estilo de contenidos de la pagina
@@ -43,6 +19,14 @@ h2 {
     font-size: 1.2em;
 }
 
+.usuario {
+	position: absolute;
+	margin-top: 10px;
+	top: 0px;
+	right: 0px;
+    font-size: 1em;
+}
+
 /* Estilo de los mensajes de validacion de campos
 ------------------------------------------------------- */
 
@@ -52,20 +36,21 @@ h2 {
 	border-radius: 4px;
 	color: white;
 	font-weight: bold;
-	margin-left: -260px;
-	margin-top: 70px;
+	margin-left: 52px;
+	margin-top: 4px;
 	position: absolute;
+	text-align: center;
+	width: 172px;
 }
 
-/*
-.error:before { /*Crea una flechita
+
+.error:before { /*Crea una flechita*/
 	content: '';
-	border-top: 8px solid transparent;
-	border-bottom: 8px solid transparent;
-	border-right: 8px solid #BC1010;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 15px solid #BC1010;
 	border-left: 8px solid transparent;
-	left: -16px;
+	left: -22px;
 	position: absolute;
-	top: 8.3px;
+	top: 7.5px;
 }
-*/

@@ -1,4 +1,4 @@
-/* Estilo del formulario de login
+/* Estilo del formulario de registro
 ------------------------------------------------------- */
 
 html, body, applet, object, iframe,
@@ -31,25 +31,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .header {
     border-Bottom: 1px solid #FFFFFF;
     height: 30px;
@@ -67,6 +48,25 @@ h2 {
     font-size: 1.3em;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*
@@ -97,9 +97,8 @@ a:hover {
 
 .login {
   position: relative;
-  margin: -10px auto;
-  width: 400px;
-  padding-right: 32px;
+  margin: -50px auto;
+  width: 600px;
   font-weight: 300;
   color: #a8a7a8;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
@@ -139,7 +138,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 label {
   float: left;
-  width: 100px;
+  width: 170px;
   line-height: 40px;
   padding-right: 10px;
   font-weight: 100;
@@ -149,8 +148,8 @@ label {
 
 .login-submit {
   position: absolute;
-  top: 12px;
-  right: 0;
+  top: 162px;
+  right: 98px;
   width: 48px;
   height: 48px;
   padding: 8px;
