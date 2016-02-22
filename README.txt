@@ -1,1 +1,1 @@
-Esta aplicaci&oacute;n permite a un usuario registrado subir im&aacute;genes a un servidor. A su vez, permite la visualizaci&oacute;n y descarga de la mismas por parte de cualquier usuario.
+Esta aplicación permite a un usuario registrado subir imágenes a un servidor. A su vez, permite la visualización y descarga de las mismas por parte de cualquier usuario.
